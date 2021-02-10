@@ -1,6 +1,3 @@
-# pip install beautifulsoup4
-# pip install omdbapi
-
 from bs4 import BeautifulSoup
 import codecs
 from omdbapi.movie_search import GetMovie
