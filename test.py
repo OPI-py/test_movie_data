@@ -24,9 +24,16 @@ for title in movie_list:
 
 i = 0
 
-with open('info.csv', 'w', newline='') as f:
+with open('info.csv', 'w', newline='', encoding='utf-8') as f:
+    # csv.DictWriter could be used to simplify the output code
+    # (https://docs.python.org/3/library/csv.html#csv.DictWriter)
     writer = csv.writer(f)
+    # enumerate could be used to simplify looping with index
+    # (https://docs.python.org/3/library/functions.html?highlight=enumerate#enumerate)
     writer.writerow(movie_details[0].keys())
     for item in movie_details:
         writer.writerow(movie_details[i].values())
         i += 1
+
+# Merge the data parsed from the “Most Popular Movies” HTML with the data
+# collected from OMDb, with the IMDb value taking priority
