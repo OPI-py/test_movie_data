@@ -1,4 +1,4 @@
 # test_movie_data
-
-# pip install beautifulsoup4
-# pip install omdbapi
+<hr>
+<p><code>pip install beautifulsoup4</code></p>
+<p><code>pip install omdbapi</code></p>
